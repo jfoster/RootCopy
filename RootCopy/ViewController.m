@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 
-#import "JGProgressHUD/JGProgressHUD.h"
+#import <JGProgressHUD/JGProgressHUD.h>
 
 @interface ViewController ()
 
