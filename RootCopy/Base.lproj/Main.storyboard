@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dcc-DJ-PbQ">
+                                <rect key="frame" x="199" y="28" width="203" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Copy SpringBoard.app"/>
+                                <connections>
+                                    <action selector="copySpringBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CP5-DI-8cm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J74-FR-QXN">
+                                <rect key="frame" x="189" y="72" width="222" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Copy Public Frameworks"/>
+                                <connections>
+                                    <action selector="copyFrameworks:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EKL-Ay-F9B"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbF-ZX-T2B">
+                                <rect key="frame" x="186" y="116" width="229" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Copy Private Frameworks"/>
+                                <connections>
+                                    <action selector="copyPrivateFrameworks:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J3n-wH-yta"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J5n-oe-HUz">
+                                <rect key="frame" x="263" y="544" width="75" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Copy All"/>
+                                <connections>
+                                    <action selector="copyAll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x7o-C3-QJE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SYy-UI-gjX">
+                                <rect key="frame" x="195" y="160" width="210" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Copy Root Applications"/>
+                                <connections>
+                                    <action selector="copyPrivateFrameworks:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ReI-IE-MlL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="J74-FR-QXN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2R8-eb-ECH"/>
+                            <constraint firstItem="wbF-ZX-T2B" firstAttribute="top" secondItem="J74-FR-QXN" secondAttribute="bottom" constant="8" id="CKh-wf-4Dd"/>
+                            <constraint firstItem="SYy-UI-gjX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KzM-Tl-YoK"/>
+                            <constraint firstItem="dcc-DJ-PbQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="OHg-oh-l9j"/>
+                            <constraint firstItem="wbF-ZX-T2B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SjX-IH-19y"/>
+                            <constraint firstItem="J5n-oe-HUz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bNB-M4-amd"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="J5n-oe-HUz" secondAttribute="bottom" constant="20" id="psG-iU-V2y"/>
+                            <constraint firstItem="SYy-UI-gjX" firstAttribute="top" secondItem="wbF-ZX-T2B" secondAttribute="bottom" constant="8" id="qUG-ai-BH1"/>
+                            <constraint firstItem="dcc-DJ-PbQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vcH-dv-lty"/>
+                            <constraint firstItem="J74-FR-QXN" firstAttribute="top" secondItem="dcc-DJ-PbQ" secondAttribute="bottom" constant="8" id="w7A-7l-qBy"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="454" y="367"/>
+        </scene>
+    </scenes>
+</document>
