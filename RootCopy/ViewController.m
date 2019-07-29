@@ -56,7 +56,7 @@
     
     JGProgressHUD* hud = [JGProgressHUD progressHUDWithStyle:JGProgressHUDStyleLight];
     hud.textLabel.text = @"Copying";
-    hud.indicatorView = [[JGProgressHUDIndeterminateIndicatorView alloc] initWithHUDStyle:hud.style];
+    hud.indicatorView = [[JGProgressHUDIndeterminateIndicatorView alloc] init];
     hud.interactionType = JGProgressHUDInteractionTypeBlockAllTouches;
     [hud showInView:self.view];
     
