@@ -30,15 +30,21 @@
     [self copyFile:@"/System/Library/PrivateFrameworks"];
 }
 
--(IBAction)copyApplications:(id)sender {
+- (IBAction)copyApplications:(id)sender {
     [self copyFile:@"/Applications"];
 }
 
+- (IBAction)copyRingtones:(id)sender {
+    [self copyFile:@"/Library/Ringtones"];
+    [self copyFile:@"/System/Library/Audio/UISounds"];
+}
+
 - (IBAction)copyAll:(id)sender {
-    [self copySpringBoard:nil];
-    [self copyFrameworks:nil];
-    [self copyPrivateFrameworks:nil];
-    [self copyApplications:nil];
+    [self copySpringBoard:sender];
+    [self copyFrameworks:sender];
+    [self copyPrivateFrameworks:sender];
+    [self copyApplications:sender];
+    [self copyRingtones:sender];
 }
 
 -(void)copyFile:(NSString*)path {
